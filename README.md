@@ -7,11 +7,12 @@ This script is used to experimently determine the emissivity of a probe at diffe
 
 The project is developed and maintained by the Model experiments group at the Leibniz Institute for Crystal Growth (IKZ).
 
-## Referencing
+## Citation
 
 If you use this code in your research, please cite this repository and our associated publication:
 
 > A. Wintzer, K. Dadzis: github.com/nemocrys/emissivity-measurement, [https://doi.org/10.5281/zenodo.8202759](https://zenodo.org/badge/latestdoi/464367892).
+> 
 > S. Foroushani, A. Wintzer, K. Dadzis: IHTC.
 
 ## Principle
