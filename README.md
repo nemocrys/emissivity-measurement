@@ -1,15 +1,12 @@
 [![DOI](https://zenodo.org/badge/464367892.svg)](https://zenodo.org/badge/latestdoi/464367892)
 
 # emissivity-measurement
-Emissivity measurements using pyrometers
 
-This script is used to experimently determine the emissivity of a probe at different temperatures.
-
-The project is developed and maintained by the Model experiments group at the Leibniz Institute for Crystal Growth (IKZ).
+This script is used to experimently determine the emissivity of a probe at different temperatures, using a radiometric technique, as described in [this paper](http://dx.doi.org/10.1615/IHTC17.380-70). In summary, emissivity is iteratively adjusted until the temperature reading of the pyrometer matches the temperature measured with a reference sensor, e.g. contact sensor (Pt100) or ratio pyrometer.
 
 ## Referencing
 
-If you use this code in your research, please cite our associated publication:
+The project is developed and maintained by the Model experiments group at the Leibniz Institute for Crystal Growth (IKZ). If you use this code in your research, please cite our associated publication:
 
 > S. Foroushani, A. Wintzer, K. Dadzis, In-situ measurement of emissivity in crystal growth furnaces International Heat Transfer Conference (IHTC17), Cape Town, South Africa, Paper 545 (2023).
 
