@@ -14,7 +14,10 @@ If you use this code in your research, please cite this repository and our assoc
 > A. Wintzer, K. Dadzis: github.com/nemocrys/emissivity-measurement, [https://doi.org/10.5281/zenodo.8202759](https://zenodo.org/badge/latestdoi/464367892).
 > S. Foroushani, A. Wintzer, K. Dadzis: IHTC.
 
-## 
+## Principle
+
+This script can be used to automate emissivity measurement and data aquisition using a radiometric technique, as described in IHTC paper. In summary, emissivity is iteratively adjusted until the temperature reading of the pyrometer matches the temperature measured with a reference sensor, e.g. a contact sensors (thermocouple) or a ratio pyrometer.
+
 
 
 ## Basic functioning
@@ -28,7 +31,7 @@ An external controllable heating plate, one PT-sensor, a normal and a ratio pyro
 
 Four branches currently exist.
 
-[exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v3/tree/exp-T-control-v2_with-stationarity) Is a modification based of [exp-T-control-v2](https://github.com/nemocrys/exp-T-control-v2). The script now waits until temperature is stationary. Otherwise it is identical. 
+[exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v3/tree/exp-T-control-v2_with-stationarity) Is a modification based of [exp-T-control](https://github.com/nemocrys/exp-T-control). The script now waits until temperature is stationary. Otherwise it is identical. 
 
 [TwoPyros](https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros) is a rewrite of [exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v3/tree/exp-T-control-v2_with-stationarity) that is used to utilize a ratio-pyrometer to determine the "true" temperature. A PT100 inside the probe can be used but is not needed.
 
