@@ -31,15 +31,15 @@ More details about the script, functions and the user interface can be found [he
 
 ## Variants
 
-Four branches currently exist.
+Based on the measurement setup, namely the reference temperature sensor, one of the following variants must be used:
 
-[exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v3/tree/exp-T-control-v2_with-stationarity) Is a modification based of [exp-T-control](https://github.com/nemocrys/exp-T-control). The script now waits until temperature is stationary. Otherwise it is identical. 
+- [exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v3/tree/exp-T-control-v2_with-stationarity) Is a modification based of [exp-T-control](https://github.com/nemocrys/exp-T-control). The script now waits until temperature is stationary. Otherwise it is identical. 
 
-[TwoPyros](https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros) is a rewrite of [exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v3/tree/exp-T-control-v2_with-stationarity) that is used to utilize a ratio-pyrometer to determine the "true" temperature. A PT100 inside the probe can be used but is not needed.
+- [TwoPyros](https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros) is a rewrite of [exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v3/tree/exp-T-control-v2_with-stationarity) that is used to utilize a ratio-pyrometer to determine the "true" temperature. A PT100 inside the probe can be used but is not needed.
 
-[TwoPyros_determineK](https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros_determineK) is a version of TwoPyros that is used to additionally determine the factor k. A PT100 inside the probe is needed.
+- [TwoPyros_determineK](https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros_determineK) is a version of TwoPyros that is used to additionally determine the factor k. A PT100 inside the probe is needed.
 
-[OnePyro](https://github.com/nemocrys/exp-T-control-v3/tree/OnePyro) is a version of TwoPyros that only uses one ratio-pyrometer for the "true" temperature **and** emissivity dependent temperature. PT100 inside the probe can be used but is not needed.
+- [OnePyro](https://github.com/nemocrys/exp-T-control-v3/tree/OnePyro) is a version of TwoPyros that only uses one ratio-pyrometer for the "true" temperature **and** emissivity dependent temperature. PT100 inside the probe can be used but is not needed.
 
 
 ## Acknowledgements
