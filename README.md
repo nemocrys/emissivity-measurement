@@ -21,10 +21,13 @@ This script can be used to automate emissivity measurement and data aquisition u
 ## Required hardware:
 An externally controllable heating plate, one Pt-sensor, a normal and a ratio pyrometer (depending on the used branch). The probe should have a side hole to the center, about 1 mm blow the surface, for inserting the contact sensor.
 
-
 ## Usage overview
 
-Use settings.txt to specify at which temperatures and how a measurement should be made. The script heats the plate and reads the temperature of the probe to decide if a measurement can begin. For the measurement, the emissivity value of a pyrometer is adjusted until T_pyro == T_true. After a measurement, the data is stored, and the script goes to the next temperature.
+Use settings.txt to specify the temperature setpoints, at which measurements will be made.  At each step, the script will then steer the heating plate until the probe has reached the desired temperature, within a given threshold. 
+
+Config.yml entails the connection information and parameters of the various devices. 
+
+More details about the script, functions and the user interface can be found [here](https://github.com/nemocrys/exp-T-control).
 
 ## Variants
 
