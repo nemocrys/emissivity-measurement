@@ -8,7 +8,7 @@ This script is used to experimently determine the emissivity of a probe at diffe
 
 The project is developed and maintained by the Model experiments group at the Leibniz Institute for Crystal Growth (IKZ). If you use this code in your research, please cite our associated publication:
 
-> S. Foroushani, A. Wintzer, K. Dadzis, In-situ measurement of emissivity in crystal growth furnaces International Heat Transfer Conference (IHTC17), Cape Town, South Africa, Paper 545 (2023).
+> S. Foroushani, A. Wintzer, K. Dadzis, In-situ measurement of emissivity in crystal growth furnaces, International Heat Transfer Conference (IHTC17), Cape Town, South Africa, Paper 545 (2023).
 
 ## Required hardware:
 An externally controllable heating plate, one Pt-sensor, a normal and a ratio pyrometer (depending on the used branch). The probe should have a side hole to the center, about 1 mm blow the surface, for inserting the contact sensor.
