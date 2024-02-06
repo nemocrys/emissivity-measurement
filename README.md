@@ -16,16 +16,15 @@ If you use this code in your research, please cite this repository and our assoc
 
 ## Principle
 
-This script can be used to automate emissivity measurement and data aquisition using a radiometric technique, as described in IHTC paper. In summary, emissivity is iteratively adjusted until the temperature reading of the pyrometer matches the temperature measured with a reference sensor, e.g. a contact sensors (thermocouple) or a ratio pyrometer.
-
-
-
-## Basic functioning
-
-Use settings.txt to specify at which temperatures and how a measurement should be made. The script heats the plate and reads the temperature of the probe to decide if a measurement can begin. For the measurement, the emissivity value of a pyrometer is adjusted until T_pyro == T_true. After a measurement, the data is stored, and the script goes to the next temperature.
+This script can be used to automate emissivity measurement and data aquisition using a radiometric technique, as described in IHTC paper. In summary, emissivity is iteratively adjusted until the temperature reading of the pyrometer matches the temperature measured with a reference sensor, e.g. contact sensor (Pt100) or ratio pyrometer.
 
 ## Required hardware:
-An external controllable heating plate, one PT-sensor, a normal and a ratio pyrometer (depended on the used branch). The probe should have a borehole to the center of the probe, 1 mm blow the surface and large enough to insert the pt-sensor.
+An externally controllable heating plate, one Pt-sensor, a normal and a ratio pyrometer (depending on the used branch). The probe should have a side hole to the center, about 1 mm blow the surface, for inserting the contact sensor.
+
+
+## Usage overview
+
+Use settings.txt to specify at which temperatures and how a measurement should be made. The script heats the plate and reads the temperature of the probe to decide if a measurement can begin. For the measurement, the emissivity value of a pyrometer is adjusted until T_pyro == T_true. After a measurement, the data is stored, and the script goes to the next temperature.
 
 ## Variants
 
