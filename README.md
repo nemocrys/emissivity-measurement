@@ -9,15 +9,13 @@ The project is developed and maintained by the Model experiments group at the Le
 
 ## Citation
 
-If you use this code in your research, please cite this repository and our associated publication:
+If you use this code in your research, please cite our associated publication:
 
-> A. Wintzer, K. Dadzis: github.com/nemocrys/emissivity-measurement, [https://doi.org/10.5281/zenodo.8202759](https://zenodo.org/badge/latestdoi/464367892).
-> 
-> S. Foroushani, A. Wintzer, K. Dadzis: IHTC.
+> S. Foroushani, A. Wintzer, K. Dadzis, In-situ measurement of emissivity in crystal growth furnaces International Heat Transfer Conference (IHTC17), Cape Town, South Africa, Paper 545 (2023).
 
 ## Principle
 
-This script can be used to automate emissivity measurement and data aquisition using a radiometric technique, as described in IHTC paper. In summary, emissivity is iteratively adjusted until the temperature reading of the pyrometer matches the temperature measured with a reference sensor, e.g. contact sensor (Pt100) or ratio pyrometer.
+This script can be used to automate emissivity measurement and data aquisition using a radiometric technique, as described in [this paper](http://dx.doi.org/10.1615/IHTC17.380-70). In summary, emissivity is iteratively adjusted until the temperature reading of the pyrometer matches the temperature measured with a reference sensor, e.g. contact sensor (Pt100) or ratio pyrometer.
 
 ## Required hardware:
 An externally controllable heating plate, one Pt-sensor, a normal and a ratio pyrometer (depending on the used branch). The probe should have a side hole to the center, about 1 mm blow the surface, for inserting the contact sensor.
