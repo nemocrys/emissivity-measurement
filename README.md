@@ -7,7 +7,7 @@ This script is used to experimently determine the emissivity of a probe at diffe
 
 The project is developed and maintained by the Model experiments group at the Leibniz Institute for Crystal Growth (IKZ).
 
-## Citation
+## Referencing
 
 If you use this code in your research, please cite our associated publication:
 
