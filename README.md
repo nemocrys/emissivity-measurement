@@ -15,9 +15,10 @@ An externally controllable heating plate, one Pt-sensor, a normal and a ratio py
 
 ## Usage overview
 
-Use settings.txt to specify the temperature setpoints, at which measurements will be made.  At each step, the script will then steer the heating plate until the probe has reached the desired temperature, within a given threshold. 
+The following files are used to change the devices and measurement settings:
 
-Config.yml entails the connection information and parameters of the various devices. 
+- settings.txt can be used to specify the temperature setpoints, at which measurements will be made.  At each step, the script will then steer the heating plate until the probe has reached the desired temperature, within a given threshold.
+- Config.yml entails the connection information and parameters of the various devices. 
 
 More details about the script, functions and the user interface can be found [here](https://github.com/nemocrys/exp-T-control).
 
