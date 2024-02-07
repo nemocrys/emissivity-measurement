@@ -11,7 +11,7 @@ The project is developed and maintained by the Model experiments group at the Le
 > S. Foroushani, A. Wintzer, K. Dadzis, In-situ measurement of emissivity in crystal growth furnaces, International Heat Transfer Conference (IHTC17), Cape Town, South Africa, Paper 545 (2023).
 
 ## Required hardware:
-An externally controllable heating plate, one Pt-sensor, a normal and a ratio pyrometer (depending on the used branch). The probe should have a side hole to the center, about 1 mm blow the surface, for inserting the contact sensor.
+An externally controllable heating plate, one Pt-sensor, a normal and a ratio pyrometer (depending on the used branch). The probe should have a side hole to the center, about 1 mm blow the surface, for inserting the contact sensor. See [here](https://github.com/nemocrys/exp-T-control) for a list of sample devices. 
 
 ## Usage overview
 
