@@ -26,7 +26,7 @@ More details about the script, functions and the user interface can be found [he
 
 Based on the measurement setup, namely the reference temperature sensor, one of the following variants must be used:
 
-- [exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v3/tree/exp-T-control-v2_with-stationarity) Is a modification of [exp-T-control](https://github.com/nemocrys/exp-T-control) with the added that measurements do not start before the probe temperature has reached steady state. 
+- [exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v3/tree/exp-T-control-v2_with-stationarity) Is a modification of [exp-T-control](https://github.com/nemocrys/exp-T-control) with the added feature that measurements start after the probe temperature has reached steady state. 
 
 - [TwoPyros](https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros) is a rewrite of [exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v3/tree/exp-T-control-v2_with-stationarity), with a ratio pyrometer used as the reference sensor, thereby eliminating the need for a contact sensor, making the setup purely optical. 
 
