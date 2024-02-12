@@ -13,6 +13,8 @@ The project is developed and maintained by the Model experiments group at the Le
 ## Required hardware:
 An externally controllable heating plate, one Pt-sensor, a normal and a ratio pyrometer (depending on the used branch). The probe should have a side hole to the center, about 1 mm blow the surface, for inserting the contact sensor. See [here](https://github.com/nemocrys/exp-T-control) for a list of sample devices. 
 
+![Measurement setup](schematic.jpg?raw=true "Measurement setup")
+
 ## Usage overview
 
 The following files are used to change the devices and measurement settings:
