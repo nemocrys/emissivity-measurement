@@ -24,7 +24,7 @@ More details about the script, functions and the user interface can be found [he
 
 ## Variants
 
-Based on the measurement setup, namely the reference temperature sensor, one of the following variants must be used:
+Based on the measurement setup, namely the reference temperature sensor, one of the following branches must be used:
 
 - [exp-T-control_with-stationarity](https://github.com/nemocrys/emissivity-measurement/tree/exp-T-control_steady) is a modification of [exp-T-control](https://github.com/nemocrys/exp-T-control) with the added feature that measurements start after the probe temperature has reached steady state. 
 
