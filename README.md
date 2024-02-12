@@ -1,4 +1,4 @@
-# exp-T-control-v3: One pyrometer
+# One pyrometer
 
 ## About
 This script is a modification of https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros, which is a rewrite of https://github.com/nemocrys/exp-T-control-v3. The goal is to get the emissivity of a given probe with the help of only one ratio-pyrometer. The ratio-pyrometer measures both in the ratio mode and in the mono mode, so the emissivity can be calculated numerically.
