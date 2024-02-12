@@ -1,0 +1,22 @@
+# Sensor(s) to which the emissivity is to be adjusted:
+# "pyro" and "pt" are allowed
+s:pt,pyro
+
+# Sensors used for the calculation of the target temperature & stationarity
+# "heizer", "ratio" or "sample" are allowed
+m:heizer
+
+# Recepy
+# Target temperature,Tolerance,Measuring duration,Stationary duration,Stationary tolerance
+# r:260,3,2,2,.8
+# r:280,3,2,2,.8
+# r:300,15,1,2,1
+r:300,20,1,1,2
+r:350,25,1,1,2
+
+# example r:260,3,2,2,.8
+# Target temperature   : Which Temperature should the probe have (fE: 260°C)?
+# tolerance            : How much deveation of the Targettemperature is okay? "3" means the measerment will take place from 257°C-263°C. Measerment will pause until the probe is in bounds again.
+# measuring duration   : How long should the measerment take place? "2" means the measerment will take 2 minutes. pauses are not added.
+# Stationary duration  : How long should be the stationary be measured? "2" means the temperature has to be stationary for 2 minutes.
+# Stationary tolerance : How much deveation of the temperature is still considerd stationary? ".8" means that the lowest and higest temperature for the set Stationary duration can not be 0.8°C appart or the the temperature would not be considert stationary and the measerment does not start.
