@@ -1,0 +1,12 @@
+[Heating]
+### Hinweise: ###
+# jeder sollwert muss vom vorherigen unterschiedlich sein, sonnst wird der Schritt übergangen!
+# dauer1 muss min. 2 groß sein, sonnst wird Emis_Ende.txt nicht befüllt!
+
+# sollwert,toleranz1,dauer1,toleranz2,dauer2,Messgerät
+zy1: 260   ,5,2,1,2,pyro
+zy2: 260.1 ,5,2,1,2,pt
+zy3: 275   ,5,2,1,2,pyro
+zy4: 275.1 ,5,2,1,2,pt
+zy5: 290   ,5,2,1,2,pyro
+zy6: 290.1 ,5,2,1,2,pt

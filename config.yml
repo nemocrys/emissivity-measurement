@@ -1,0 +1,104 @@
+# bd = Baudrate
+
+Pyrometer_KW:
+  Pyro. (SW, Adv 6/23):
+    com:      '/dev/ttyUSB3'    
+    bd:       115200              
+    parity:   'E'
+    stopbits: 1
+    bytesize: 8
+    emis:     70
+    trans:    100
+    t90:      '7'
+    
+IGAR-6-adv:  # Ratio pyrometer
+    # comment: your comment for nomad ELN
+  serial-interface:
+    port: '/dev/ttyUSB1'
+    baudrate: 115200
+    bytesize: 8
+    stopbits: 1
+    parity: 'E'
+    timeout: 0.1
+  device-id: '00'
+  emissivity: 0.5     # 0.0 < emissivity <= 1.0
+  transmissivity: 1 # 0.0 < transmissivity <= 1.0
+  k: 1.1            # k = [0.600, 2.000];
+  operationMode: 2    # 0:metal, 1:mono, 2:ratio, 3:smart
+  t90: 0.01  # s, has to be a value out of t90-dict (below)
+  t90-dict:  # according to manual, don't modify that
+    0.01: 1
+    0.05: 2
+    0.25: 3
+    1.0: 4
+    3.0: 5
+    10.0: 6
+  
+     
+# Pyrometer_LW:
+#   Schnittstelle:
+#     com:      '/dev/ttyUSB2'    
+#     bd:       19200              
+#     parity:   'E'
+#     stopbits: 1
+#     bytesize: 8
+#   Geraete:
+# #     Langwellig AV 20:1:
+# #       emis:     50
+# #       array_num: 1
+#     Pyro. (LW, 10:1):  
+#       emis:     20
+#       array_num: 2
+
+Pt100:
+#   Pt Oberfläche:
+#    GPIO:   D16
+#    res:    100
+#    refres: 430 
+#    wire:   4
+#    Vergleichssensor: True
+  PT100 (sample):
+    GPIO:   D24
+    res:    100
+    refres: 430 
+    wire:   4
+    Vergleichssensor: True
+#   PT100 (shield):
+#     GPIO:   D23
+#     res:    100
+#     refres: 430 
+#     wire:   4
+#     Vergleichssensor: False
+
+Heizer:
+  Schnittstelle:
+    com:      '/dev/ttyUSB0'   
+    bd:       9600              # Emulation: 19200 (8N1) - Eurotherm/IKA: 9600 (7E1)
+    parity:   'E'
+    stopbits: 1
+    bytesize: 7
+  Auswahl:
+    String: IKA              # IKA = IKA Heizplatte, Eurotherm = Eurotherm
+
+# Eurotherm:
+#   gid:     0           
+#   uid:     0
+#   kp:      3.4               # Eurotherm (P - 5.8, I - 594.9, D - 99.1) - PID (P - 3.4, I - 165.4) - PI / Arduino (P - 200, I - 0.3, D - 0)
+#   ti:      165
+#   td:      0
+#   max_OP:  10              # in Prozent (Leistungsausgang)
+
+Strings:
+  Regelsensor:  'Pt100'
+  Rezept:       Messreihe_Rezept.txt
+  
+Delay:
+  Heizer:  0.5 # in s (Emulation (nur Arduino) - 0.5 s)
+
+Emulation:
+  arduino_in: False              
+  com:        '/dev/ttyACM0'    
+  bd:         19200              
+  parity:     'N'
+  stopbits:   1
+  bytesize:   8
