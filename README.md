@@ -2,7 +2,7 @@ ZONDEO LINK HERE [![DOI]()]()
 
 # emissivity-measurement
 
-This script is used to experimently determine the emissivity of a probe at different temperatures, using a radiometric technique, as described in [this paper](http://dx.doi.org/10.1615/IHTC17.380-70). In summary, emissivity is iteratively adjusted until the temperature reading of the pyrometer matches the temperature measured with a reference sensor, e.g. contact sensor (Pt100) or ratio pyrometer.
+This script is used to experimently determine the emissivity of a sample at different temperatures, using a radiometric technique, as described in [this paper](http://dx.doi.org/10.1615/IHTC17.380-70). In summary, emissivity is iteratively adjusted until the temperature reading of the pyrometer matches the temperature measured with a reference sensor, e.g. contact sensor (Pt100) or ratio pyrometer.
 
 ## Referencing
 
@@ -11,7 +11,7 @@ The project is developed and maintained by the Model experiments group at the Le
 > S. Foroushani, A. Wintzer, K. Dadzis, In-situ measurement of emissivity in crystal growth furnaces, International Heat Transfer Conference (IHTC17), Cape Town, South Africa, Paper 545 (2023).
 
 ## Required hardware:
-An externally controllable heating plate, one Pt-sensor, a normal and a ratio pyrometer (depending on the used branch). The probe should have a side hole to the center, about 1 mm blow the surface, for inserting the contact sensor. See [here](https://github.com/nemocrys/exp-T-control) for a list of sample devices. 
+An externally controllable heating plate, one Pt-sensor, a normal and a ratio pyrometer (depending on the used branch). The sample should have a side hole to the center, about 1 mm blow the surface, for inserting the contact sensor. See [here](https://github.com/nemocrys/exp-T-control) for a list of sample devices. 
 
 ![Measurement setup](schematic.jpg?raw=true "Measurement setup")
 
@@ -19,7 +19,7 @@ An externally controllable heating plate, one Pt-sensor, a normal and a ratio py
 
 The following files are used to change the devices and measurement settings:
 
-- settings.txt can be used to specify the temperature setpoints, at which measurements will be made.  At each step, the script will then steer the heating plate until the probe has reached the desired temperature, within a given threshold.
+- settings.txt can be used to specify the temperature setpoints, at which measurements will be made.  At each step, the script will then steer the heating plate until the sample has reached the desired temperature, within a given threshold.
 - Config.yml entails the connection information and parameters of the various devices. 
 
 More details about the script, functions and the user interface can be found [here](https://github.com/nemocrys/exp-T-control).
@@ -28,13 +28,17 @@ More details about the script, functions and the user interface can be found [he
 
 Based on the measurement setup, namely the reference temperature sensor, one of the following branches must be used:
 
-- [exp-T-control_steady](https://github.com/nemocrys/emissivity-measurement/tree/exp-T-control_steady) is a modification of [exp-T-control](https://github.com/nemocrys/exp-T-control) with the added feature that measurements start after the probe temperature has reached steady state. 
+- [exp-T-control_steady](https://github.com/nemocrys/emissivity-measurement/tree/exp-T-control_steady) is a modification of [exp-T-control](https://github.com/nemocrys/exp-T-control) with the added feature that measurements start after the sample temperature has reached steady state. 
 
 - [TwoPyros](https://github.com/nemocrys/emissivity-measurement/tree/TwoPyros) is a rewrite of [exp-T-control_with-stationarity](https://github.com/nemocrys/emissivity-measurement/tree/exp-T-control_steady), with a ratio pyrometer used as the reference sensor, thereby eliminating the need for a contact sensor, making the setup purely optical. 
 
 - [TwoPyros_with_calib](https://github.com/nemocrys/emissivity-measurement/tree/TwoPyros_with_calib) is a variant of [TwoPyros](https://github.com/nemocrys/emissivity-measurement/tree/TwoPyros) where the factor k is automatically determined based on comparison with the contact sensor. This can be used for validation of measurements using [TwoPyros](https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros).
 
 - [OnePyro](https://github.com/nemocrys/emissivity-measurement/tree/OnePyro) alternates the ratio pyrometer between the normal and ratio modes, thereby eliminating the need for a second pyrometer.
+
+## Results
+Results are stored in the data folder. Each measurement generates a plot.png, a data.csv with all recorded data points and values, and a measurment_data.csv that contains the average data and standard deviations of every measurement point.
+
 
 ## Acknowledgements
 
