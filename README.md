@@ -1,4 +1,4 @@
-# exp-T-control-v3: Two pyrometers
+# Two pyrometers
 
 ## About
 This script is a rewrite of [exp-T-control-v2_with-stationarity](https://github.com/nemocrys/exp-T-control-v2_with-stationarity). The goal is to get the emissivity of a given probe with the help of a ratio-pyrometer. If you want to determin the factor k use [TwoPyros_determineK](https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros_determineK).
