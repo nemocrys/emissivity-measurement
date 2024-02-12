@@ -1,0 +1,12 @@
+[Heating]
+# Target temperature,Tolerance,Measuring duration,Stationary tolerance,Stationary duration
+zy1: 50,0.5,20,5,4
+zy2: 100,0.5,20,5,4
+zy3: 150,0.5,20,5,4
+
+# example zy1:260,3,2,1,2
+# Target temperature   : Which Temperature should the probe have (fE: 260°C)?
+# tolerance            : How much deveation of the Targettemperature is okay? "3" means the measerment will take place from 257°C-263°C. Measerment will pause until the probe is in bounds again.
+# measuring duration   : How long should the measerment take place? "2" means the measerment will take 2 minutes. pauses are not added.
+# Stationary tolerance : How much deveation of the temperature is still considerd stationary? ".8" means that the lowest and higest temperature for the set Stationary duration can not be 1°C appart or the the temperature would not be considert stationary and the measerment does not start.
+# Stationary duration  : How long should be the stationary be measured? "2" means the temperature has to be stationary for 2 minutes.
