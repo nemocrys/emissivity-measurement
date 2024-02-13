@@ -6,7 +6,7 @@ This script is used to experimently determine the emissivity of a sample at diff
 
 ## Referencing
 
-The project is developed and maintained by the Model experiments group at the Leibniz Institute for Crystal Growth (IKZ). If you use this code in your research, please cite our associated publication:
+The project is developed and maintained by the [Model Experiments group](https://nemocrys.github.io/) at the Leibniz Institute for Crystal Growth (IKZ). If you use this code in your research, please cite our associated publication:
 
 > S. Foroushani, A. Wintzer, K. Dadzis, In-situ measurement of emissivity in crystal growth furnaces, International Heat Transfer Conference (IHTC17), Cape Town, South Africa, Paper 545 (2023).
 
