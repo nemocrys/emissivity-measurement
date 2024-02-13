@@ -30,14 +30,14 @@ Based on the measurement setup, namely the reference temperature sensor, one of 
 
 - [exp-T-control_steady](https://github.com/nemocrys/emissivity-measurement/tree/exp-T-control_steady) is a modification of [exp-T-control](https://github.com/nemocrys/exp-T-control) with the added feature that measurements start after the sample temperature has reached steady state. 
 
-- [TwoPyros](https://github.com/nemocrys/emissivity-measurement/tree/TwoPyros) is a rewrite of [exp-T-control_with-stationarity](https://github.com/nemocrys/emissivity-measurement/tree/exp-T-control_steady), with a ratio pyrometer used as the reference sensor, thereby eliminating the need for a contact sensor, making the setup purely optical. 
+- [TwoPyros](https://github.com/nemocrys/emissivity-measurement/tree/TwoPyros) is a rewrite of [exp-T-control_steady](https://github.com/nemocrys/emissivity-measurement/tree/exp-T-control_steady), with a ratio pyrometer used as the reference sensor, thereby eliminating the need for a contact sensor, making the setup purely optical. 
 
-- [TwoPyros_with_calib](https://github.com/nemocrys/emissivity-measurement/tree/TwoPyros_with_calib) is a variant of [TwoPyros](https://github.com/nemocrys/emissivity-measurement/tree/TwoPyros) where the factor k is automatically determined based on comparison with the contact sensor. This can be used for validation of measurements using [TwoPyros](https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros).
+- [TwoPyros_with_calib](https://github.com/nemocrys/emissivity-measurement/tree/TwoPyros_with_calib) is a variant of [TwoPyros](https://github.com/nemocrys/emissivity-measurement/tree/TwoPyros) where the factor k is automatically determined during the measurements based on comparison with the contact sensor. This can be used for calibration or validation of measurements using [TwoPyros](https://github.com/nemocrys/exp-T-control-v3/tree/TwoPyros).
 
-- [OnePyro](https://github.com/nemocrys/emissivity-measurement/tree/OnePyro) alternates the ratio pyrometer between the normal and ratio modes, thereby eliminating the need for a second pyrometer.
+- [OnePyro](https://github.com/nemocrys/emissivity-measurement/tree/OnePyro) is a modification [TwoPyros](https://github.com/nemocrys/emissivity-measurement/tree/TwoPyros) where the ratio pyrometer is alternated between the normal and ratio modes, thereby eliminating the need for a second pyrometer.
 
 ## Results
-Results are stored in the data folder. Each measurement generates a plot.png, a data.csv with all recorded data points and values, and a measurment_data.csv that contains the average data and standard deviations of every measurement point.
+Results are stored in the data folder. Each measurement generates a plot.png, a data.csv file with all recorded data points and values, and a measurment_data.csv file that contains the average data and standard deviations of each measurement point.
 
 
 ## Acknowledgements
