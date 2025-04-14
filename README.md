@@ -1,4 +1,4 @@
-ZONDEO LINK HERE [![DOI]()]()
+[![DOI](https://zenodo.org/badge/750316634.svg)](https://doi.org/10.5281/zenodo.15214434)
 
 # emissivity-measurement
 
